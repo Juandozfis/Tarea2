@@ -15,24 +15,24 @@ $P_2= \frac{1}{2}(3x^2 -1)$ que son
 
 al ser las raices de la funcion y los pesos de la funcion estan dados y son iguales para N=2
 
- $\(w_1 = w_2 = 1\)$. La aproximación de la integral de \(f(x) = e^x\) en \([-1,1]\) es:
+ $w_1 = w_2 = 1$. La aproximación de la integral de \(f(x) = e^x\) en \([-1,1]\) es:
 
 
 
 Al aplicar
-$
+$$
 I \approx \sum_{i=1}^{n} w_i f(x_i)
-$
+$$
 
 Se obtiene que la integral de nuestra funcion es aproximadamente:
 
-$
+$$
 I \approx e^{-1/\sqrt{3}} + e^{1/\sqrt{3}}.
+$$
 
 
 
-
-Para implementarla en python sera necesario algo como: 
+Para implementarla en python sera necesario algo del tipo: 
 
 ```python
 
@@ -43,6 +43,7 @@ from cuadrature.py import gaussxwab
 
 
 # Función a integrar
+
 def f(x):
     return e**x
 
