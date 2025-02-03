@@ -306,15 +306,16 @@
 <p><span class="arithmatex">\(P_2= \frac{1}{2}(3x^2 -1)\)</span> que son</p>
 <p><span class="arithmatex">\(x_1 = -\frac{1}{\sqrt{3}}, x_2 = \frac{1}{\sqrt{3}}\)</span></p>
 <p>al ser las raices de la funcion y los pesos de la funcion estan dados y son iguales para N=2</p>
-<p><span class="arithmatex">\(\(w_1 = w_2 = 1\)\)</span>. La aproximación de la integral de <span class="arithmatex">\(f(x) = e^x\)</span> en <span class="arithmatex">\([-1,1]\)</span> es:</p>
+<p><span class="arithmatex">\(w_1 = w_2 = 1\)</span>. La aproximación de la integral de <span class="arithmatex">\(f(x) = e^x\)</span> en <span class="arithmatex">\([-1,1]\)</span> es:</p>
 <p>Al aplicar
-$
+$$
 I \approx \sum_{i=1}^{n} w_i f(x_i)
-$</p>
+$$</p>
 <p>Se obtiene que la integral de nuestra funcion es aproximadamente:</p>
-<p>$
-I \approx e^{-1/\sqrt{3}} + e^{1/\sqrt{3}}.</p>
-<p>Para implementarla en python sera necesario algo como: </p>
+<div class="arithmatex">\[
+I \approx e^{-1/\sqrt{3}} + e^{1/\sqrt{3}}.
+\]</div>
+<p>Para implementarla en python sera necesario algo del tipo: </p>
 <p>```python</p>
 <p>from cuadrature.py import gaussxw</p>
 <p>from cuadrature.py import gaussxwab</p>

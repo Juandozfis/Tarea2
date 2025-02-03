@@ -297,14 +297,14 @@
 
 
 <h1 id="explanation-cuadratura-gaussiana-con-polinomios-de-legendre">Explanation: Cuadratura Gaussiana con Polinomios de Legendre</h1>
-<p>Es un método numerico para la aproximacion de interales que utiliza puntos de cuadratura <span class="arithmatex">\(x_i\)</span> (raices de los polinomio s de Legendre) y pesos <span class="arithmatex">\(w_i\)</span> (calculados mediante:</p>
-<p>$
+<p>Es un método numerico para la aproximacion de interales que utiliza puntos de cuadratura <span class="arithmatex">\(x_i\)</span> (raices de los polinomio s de Legendre) y pesos <span class="arithmatex">\(w_i\)</span>, calculados mediante:</p>
+<div class="arithmatex">\[
 w_i = \frac{2}{(1 - x_i^2) (P_n'(x_i))^2}
-$)</p>
+\]</div>
 <p>La integral se aproxima como:</p>
-<p>$
+<div class="arithmatex">\[
 I \approx \sum_{i=1}^{n} w_i f(x_i)
-$</p>
+\]</div>
 <p>Este metodo tiene una alta precision, en parte gracias a que utiliza puntos equidistantes, y es exacto para polinomios de gradomenos o igual a 2N-1 con N el numero de nodos.   </p>
 
 
